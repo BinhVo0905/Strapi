@@ -33,14 +33,31 @@
       "mappedBy": "app"
     },
     "SliderImages": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "Statistic": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.jetton"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "apps"
+    },
+    "SocialLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.social"
     }
   }
 }
