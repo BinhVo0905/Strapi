@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_jetton_statistic_items",
+  "info": {
+    "displayName": "StatisticItem"
+  },
+  "options": {},
+  "attributes": {
+    "item": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::item.item"
+    },
+    "ValueChange": {
+      "type": "decimal"
+    },
+    "Value": {
+      "type": "float"
+    }
+  }
+}

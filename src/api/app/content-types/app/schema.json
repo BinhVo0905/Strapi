@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "apps",
+  "info": {
+    "singularName": "app",
+    "pluralName": "apps",
+    "displayName": "App",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Rating": {
+      "type": "float"
+    },
+    "Text": {
+      "type": "string"
+    },
+    "reviews": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::review.review",
+      "mappedBy": "app"
+    },
+    "SliderImages": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

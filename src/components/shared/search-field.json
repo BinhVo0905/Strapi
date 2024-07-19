@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_shared_search_fields",
+  "info": {
+    "displayName": "SearchField"
+  },
+  "options": {},
+  "attributes": {
+    "PlaceHolder": {
+      "type": "string"
+    }
+  }
+}

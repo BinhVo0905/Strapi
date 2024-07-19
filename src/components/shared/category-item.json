@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_category_items",
+  "info": {
+    "displayName": "CategoryItem"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Socials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.social"
+    }
+  }
+}

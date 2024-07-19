@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Slug": {
+      "type": "string"
+    },
+    "Blocks": {
+      "type": "dynamiczone",
+      "components": [
+        "jetton.statistic",
+        "shared.search-field",
+        "shared.header",
+        "blocks.cta",
+        "app.information-item",
+        "shared.button",
+        "blocks.faq"
+      ]
+    }
+  }
+}

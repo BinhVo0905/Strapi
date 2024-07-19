@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_blocks_faqs",
+  "info": {
+    "displayName": "FAQ"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    }
+  }
+}

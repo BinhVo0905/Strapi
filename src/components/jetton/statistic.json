@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_jetton_statistics",
+  "info": {
+    "displayName": "Statistic",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Items": {
+      "displayName": "StatisticItem",
+      "type": "component",
+      "repeatable": true,
+      "component": "jetton.statistic-item"
+    },
+    "SeeButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.button"
+    },
+    "Value": {
+      "type": "float"
+    },
+    "ValueChange": {
+      "type": "float"
+    }
+  }
+}

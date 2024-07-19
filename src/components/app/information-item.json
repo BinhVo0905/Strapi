@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_app_information_items",
+  "info": {
+    "displayName": "Information",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Content": {
+      "type": "text"
+    },
+    "Button": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.button"
+    }
+  }
+}
